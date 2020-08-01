@@ -186,7 +186,7 @@
                                     will become an example. And examples are given not forgotten. </p>
                                 <P>Aamir Khan, Dangal</P>
                             </div>
-                            <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+                            <img src="images/jj1.png" alt="Image" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -590,35 +590,41 @@
                 </div>
                 <div class="col-md-6 mr-auto order-2 order-md-1">
 
-                    <h2 class="section-title mb-3">Contact Us</h2>
+                    <h2 class="section-title mb-3">Contact Me</h2>
                     <p class="mb-5">Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia
                         quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
 
-                    <form method="post">
+                    <form method="post"
+                        action="https://script.google.com/macros/s/AKfycbz28ZGnJIGhdH1nUalMQOiPnSEkEEJHrkWZFXG5o9MDL2zP6RYB/exec"
+                        class="gform">
+
                         <div class="form-group row">
                             <div class="col-md-6 mb-4">
-                                <input type="text" class="form-control" placeholder="First name">
+                                <input type="text" class="form-control" placeholder="First name" required minlength="2"
+                                    name="firstname">
                             </div>
                             <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Last name">
+                                <input type="text" class="form-control" placeholder="Last name" required minlength="2"
+                                    name="lastname">
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <div class="col-md-12">
-                                <input type="text" class="form-control" placeholder="Subject">
+                                <input type="text" class="form-control" placeholder="Subject" required name="subject">
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <div class="col-md-12">
-                                <input type="email" class="form-control" placeholder="Email">
+                                <input type="email" class="form-control" placeholder="Email" required name="email">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-md-12">
                                 <textarea class="form-control" id="" cols="30" rows="10"
-                                    placeholder="Write your message here."></textarea>
+                                    placeholder="Write your message here." required minlength="5"
+                                    name="message"></textarea>
                             </div>
                         </div>
 
@@ -626,6 +632,15 @@
                             <div class="col-md-6">
 
                                 <input type="submit" class="btn btn-primary py-3 px-5 btn-block" value="Send Message">
+
+                                <div style="display:none" class="thankyou_message">
+                                    <!-- You can customize the thankyou message by editing the code below -->
+                                    <h2 style="color: brown;"><em>*** Thanks ***</em> <br>I will get back to you soon!
+                                    </h2>
+
+
+                                </div>
+
                             </div>
                         </div>
 
@@ -642,7 +657,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h3>About Us</h3>
+                    <h3>About Me</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro consectetur ut hic ipsum et
                         veritatis corrupti. Itaque eius soluta optio dolorum temporibus in, atque, quos fugit sunt
                         sit quaerat dicta.</p>
@@ -721,6 +736,9 @@
     <script src="js/jquery.animateNumber.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
     <script src="js/main.js"></script>
+
+    <script data-cfasync="false" type="text/javascript" src="js/submit.js"></script>
+
 
 
 </body>
